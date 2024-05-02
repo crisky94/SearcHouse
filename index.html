@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SEARCHOUSE</title>
+    <link rel="shortcut icon" href="/public/casa.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/skeleton.css" />
+    <link rel="stylesheet" href="style/app.css" />
+  </head>
+
+  <body>
+    <img class="icon" src="/public/casa.png" width="50" />
+    <h1 class="title">Searc<span class="h">h</span>ouse</h1>
+
+    <div class="contenedor">
+      <form id="buscador">
+        <div class="row">
+          <div class="three columns">
+            <label for="tipo">Tipo de propiedad</label>
+            <select class="u-full-width" id="tipo">
+              <option value="">Seleccione</option>
+              <option value="Piso">Piso</option>
+              <option value="Estudio">Estudio</option>
+              <option value="Apartamento">Apartamento</option>
+              <option value="Chalet">Chalet</option>
+              <option value="Adosado">Adosado</option>
+            </select>
+          </div>
+
+          <div class="three columns">
+            <label for="minimo">Precio Min</label>
+            <select class="u-full-width" id="minimo">
+              <option value="">Seleccione</option>
+              <option value="50000">50,000</option>
+              <option value="60000">60,000</option>
+              <option value="70000">70,000</option>
+              <option value="80000">80,000</option>
+              <option value="90000">90,000</option>
+              <option value="100000">100,000</option>
+              <option value="110000">110,000</option>
+              <option value="120000">120,000</option>
+              <option value="130000">130,000</option>
+              <option value="140000">140,000</option>
+              <option value="150000">150,000</option>
+              <option value="160000">160,000</option>
+              <option value="170000">170,000</option>
+              <option value="180000">180,000</option>
+              <option value="190000">190,000</option>
+              <option value="200000">200,000</option>
+              <option value="210000">210,000</option>
+              <option value="220000">220,000</option>
+              <option value="230000">230,000</option>
+              <option value="240000">240,000</option>
+              <option value="250000">250,000</option>
+            </select>
+          </div>
+          <div class="three columns">
+            <label for="maximo">Precio Max</label>
+            <select class="u-full-width" id="maximo">
+              <option value="">Seleccione</option>
+              <option value="50000">50,000</option>
+              <option value="60000">60,000</option>
+              <option value="70000">70,000</option>
+              <option value="80000">80,000</option>
+              <option value="90000">90,000</option>
+              <option value="100000">100,000</option>
+              <option value="110000">110,000</option>
+              <option value="120000">120,000</option>
+              <option value="130000">130,000</option>
+              <option value="140000">140,000</option>
+              <option value="150000">150,000</option>
+              <option value="160000">160,000</option>
+              <option value="170000">170,000</option>
+              <option value="180000">180,000</option>
+              <option value="190000">190,000</option>
+              <option value="200000">200,000</option>
+              <option value="210000">210,000</option>
+              <option value="220000">220,000</option>
+              <option value="230000">230,000</option>
+              <option value="240000">240,000</option>
+              <option value="250000">250,000</option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="four columns">
+              <label for="rooms">Habitaciones</label>
+              <select class="u-full-width" id="rooms">
+                <option value="">Seleccione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="four columns">
+              <label for="bathrooms">Baños</label>
+              <select class="u-full-width" id="bathrooms">
+                <option value="">Seleccione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <h1>Resultados</h1>
+      <div id="resultado"></div>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
